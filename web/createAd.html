@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetLand - Criar anúncio</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Petland</h1>
+
+      <div class="buttons">
+        <button class="button"><a href="./index.html">Sair</a></button>
+      </div>
+    </header>
+
+    <main class="main-feed">
+      <div>
+        <div class="perfil">
+          <img src="./assets/imgs/perfil.jpg" alt="foto de perfil" />
+          <h3 class="nome-perfil">Usuário</h3>
+        </div>
+      </div>
+      <div class="main-feed-content">
+        <div class="buttons-box">
+            <button class="feed-button" action=""><a href="./feed.jsp">Cancelar</a></button>
+          <button class="feed-button">Ver meus anúncios</button>
+        </div>
+      </div>
+      <div class="alert-box">
+        <img src="./assets/imgs/alert-bell.svg" alt="alerta" />
+        <h3>0 notificações</h3>
+      </div>
+
+      <div></div>
+      <div class="create-ad">
+          <form action="createPost" method="POST" class="create-ad-form">
+          <div class="ad-title-section">
+            <h3>Título :</h3>
+            <input type="text" name="ad-title" id="ad-title" />
+          </div>
+          <div class="ad-price-section">
+            <h3>Preço :</h3>
+            <input type="number" name="ad-price" id="ad-price" />
+          </div>
+
+          <h3>Escolher imagem :</h3>
+          <div class="ad-img-section">
+            <label for="ad-img"
+              ><img
+                src="./assets/imgs/image_icon-icons.com_50366.ico"
+                alt="icone imagem"
+            /></label>
+            <input type="file" name="ad-image" id="id-img" />
+          </div>
+          <div class="ad-description-section">
+            <h3>Descrição :</h3>
+            <input type="text" name="ad-description" id="ad-description" />
+          </div>
+
+          <div class="ad-buttons-section">
+            <button class="ad-button-clear">Limpar</button>
+            <button type="submit" class="ad-button-done">Criar</button>
+          </div>
+        </form>
+      </div>
+      <div></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>PetLand - Cadastro</title>
+</head>
+<body>
+    <header class="header">
+        <h1><a href="../index.html">Petland</a></h1>
+        <div class="buttons">
+            <button class="button"><a href="./login.html">Login</a></button>
+        </div>       
+    </header>
+    <main class="main-content">
+        <div class="createAcc-container">
+            <h1>Criar conta</h1>
+            <form id="form" action="">
+                <input class="ipm" type="text" placeholder="Nome" id="name" onfocus="inputFocus(this)" onblur="inputBlur(this)">
+                <input class="ipm com" type="text" placeholder="Sobrenome" id="surname" onfocus="inputFocus(this)" onblur="inputBlur(this)">
+                <input class="ipg" type="text" placeholder="E-mail" id="email" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br>
+                <input class="ipg date" type="date" placeholder="Data de nascimento" id="date" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br>
+                <input class="ipm" type="password" placeholder="Senha" id="password" onfocus="inputFocus(this)" onblur="inputBlur(this)">
+                <input class="ipm com" type="password" placeholder="Confirmar Senha" id="passwordConfirm" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br>
+                <button id="button" type="button">Criar Conta</button><br>
+                <p id="textArea"></p>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Direitos reservados: Grupo de Alunos da<a href="https://www.unicarioca.edu.br/" target="_blank"> UniCarioca</a></p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
